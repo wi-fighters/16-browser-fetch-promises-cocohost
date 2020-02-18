@@ -3,5 +3,18 @@ import '../styles/main.scss';
 // Import any additional modules you want to include below \/
 
 
+let somePromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("You waited a long time! ")
+  }, 60 * 100);
+})
+
+somePromise.then(msj => {
+  alert(msj)
+})
+
 // \/ All of your javascript should go here \/
 
+
+
+// create a fetch ...
